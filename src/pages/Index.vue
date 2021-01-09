@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="TCMC Logo" src="~/tcmc-logo.png" />
 
@@ -15,9 +14,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
