@@ -1,10 +1,12 @@
 <template>
   <v-app>
     <v-app-bar app dense>
-      <v-app-bar-title>Missions Computing</v-app-bar-title>
+      <v-app-bar-title>
+        <g-link to="/"> Missions Computing </g-link>
+      </v-app-bar-title>
       <v-spacer />
-      <v-btn plain>About Us</v-btn>
-      <v-btn plain>Projects</v-btn>
+      <v-btn plain><g-link to="/about/">About Us</g-link></v-btn>
+      <v-btn plain><g-link to="/projects">Projects</g-link></v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
