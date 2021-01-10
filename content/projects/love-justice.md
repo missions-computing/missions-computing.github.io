@@ -1,6 +1,6 @@
 ---
-title: Dream Suite
-subtitle: Stop Trafficking
+title: Love Justice International
+subtitle: Anti-Trafficking
 author: Tom Nurkkala
 date: 2019-06-12
 ---
