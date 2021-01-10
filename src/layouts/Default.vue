@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app dense>
+    <v-app-bar app>
       <v-app-bar-title>
         <g-link to="/"> Missions Computing </g-link>
       </v-app-bar-title>
