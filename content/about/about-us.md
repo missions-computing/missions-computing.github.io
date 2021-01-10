@@ -2,7 +2,7 @@
 title: Missions Computing at Taylor University
 subtitle: Missions Computing Q&A
 author: Tom Nurkkala
-date: June 9, 2010
+date: 2010-06-09
 ---
 _This post borrows content that originally appeared in Christian Computing Magazine._
 
