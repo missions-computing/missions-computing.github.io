@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-app-bar-title>
-        <g-link to="/"> Missions Computing </g-link>
-      </v-app-bar-title>
+      <router-link to="/">
+        <v-app-bar-title>Missions Computing</v-app-bar-title>
+      </router-link>
       <v-spacer />
-      <v-btn plain><g-link to="/about/">About Us</g-link></v-btn>
-      <v-btn plain><g-link to="/projects">Projects</g-link></v-btn>
+      <v-btn plain to="/about/">About Us</v-btn>
+      <v-btn plain to="/projects/">Projects</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -14,6 +14,13 @@
       </v-container>
     </v-main>
     <v-footer>
+      <v-switch
+        dense
+        inset
+        v-model="darkMode"
+        @change="modeChanged"
+        label="Dark"
+      />
       <v-spacer />
       <p class="text--secondary">
         &copy; Copyright {{ new Date().getFullYear() }}
@@ -22,6 +29,22 @@
     </v-footer>
   </v-app>
 </template>
+
+<script>
+export default {
+  name: "Layout",
+  data() {
+    return {
+      darkMode: false,
+    };
+  },
+  methods: {
+    modeChanged() {
+      this.$vuetify.theme.dark = this.darkMode;
+    },
+  },
+};
+</script>
 
 <static-query>
 query { metadata { siteName } }

@@ -19,11 +19,6 @@ export default function (Vue, { appOptions, head }) {
       "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900",
   });
 
-  const opts = {}; // opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify);
-  appOptions.vuetify = new Vuetify({
-    theme: { dark: true },
-  });
-
-  Vue.component("Layout", Layout);
+  appOptions.vuetify = new Vuetify({});
 }

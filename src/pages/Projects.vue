@@ -1,12 +1,12 @@
 <template>
-  <Layout>
+  <div>
     <h1>Projects</h1>
     <v-row v-for="row in numRows" :key="row">
       <v-col v-for="post in nthRow(row - 1)" :key="post.id">
         <Post :post="post" />
       </v-col>
     </v-row>
-  </Layout>
+  </div>
 </template>
 
 <script>
