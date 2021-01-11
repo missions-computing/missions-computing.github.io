@@ -15,8 +15,10 @@
     </v-main>
     <v-footer>
       <v-spacer />
-      &copy; Copyright {{ new Date().getFullYear() }}
-      Taylor Center for Missions Computing
+      <p class="text--secondary">
+        &copy; Copyright {{ new Date().getFullYear() }}
+        Taylor Center for Missions Computing
+      </p>
     </v-footer>
   </v-app>
 </template>

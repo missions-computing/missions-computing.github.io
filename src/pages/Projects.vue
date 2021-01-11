@@ -39,11 +39,20 @@ export default {
 
 <page-query>
 query {
-  posts: allPost {
+  posts: allPost(
+    filter: {
+      fileInfo: { directory: { eq: "content/projects" } }
+      active: { eq: true }
+    }
+  ) {
     edges {
       node {
         id
-        title author date subtitle content
+        title
+        author
+        date
+        subtitle
+        content
         excerpt
       }
     }
