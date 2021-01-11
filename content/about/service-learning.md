@@ -1,5 +1,6 @@
 ---
 title: International Service Learning
+active: false
 ---
 # Upland, Indiana, USA (2021)
 # Cuenca, Ecuador (2019)
